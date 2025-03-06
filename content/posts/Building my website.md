@@ -8,11 +8,11 @@ tags:
 ---
 ## Why did I decide to build a personal website?
 
-Overall, the goal is to share more of about what I have going on than can be found on my [LinkedIn](https://www.linkedin.com/in/clmangham/) because it's *really* just a resume and I *really* don't use the social media aspects of it or any other social media platforms. 
+Overall, the goal is to share more of what I have going on than can be found on my [LinkedIn](https://www.linkedin.com/in/clmangham/) because it's *really* just a resume and I *really* don't use the social media aspects of it or any other social media platforms.
 
 Creating a personal website has been a goal of mine for a while now, and while this is not the first version of an online platform for my content, I think this is a better one. Previously, I used [streamlit](https://streamlit.io/) to build and deploy a personal webpage along with an LLM application. As a python programmer, I found it quite simple and intuitive (in fact I may still continue to use it for other projects). After deploying on the free "Community Cloud" I discovered that after a while with no traffic the whole application shut's down (which is fair).
 
-![Image Description](/images/Pasted%20image%2020250306045600.png)
+![Image Description](/images/Pasted%20image%2020250306045600.png) *Above - Streamlit apps when not used for some time.*
 
 I wanted a better hosting option with more interesting customization options, more control, and the ultimate goal of hosting the site and related services (such as LLM applications) from my secure local network. In addition, I wanted a blog style website instead of a portfolio / personal brand style website. I primarily take notes and do my writing in markdown, so turning those notes into webpages was high on my list.
 
