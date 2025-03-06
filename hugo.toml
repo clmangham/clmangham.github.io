@@ -10,10 +10,10 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
 pagerSize = 10  # Replace '10' with your preferred value
 
 [params]
-    brand = "The Garden"                      # name of your site - appears in the sidebar
+    brand = "The Data Pool"                      # name of your site - appears in the sidebar
     remote_brand_image = 'https://github.com/clmangham.png' # path to a remote file
     # brand_image = "/images/test.jpg"    # path to the image shown in the sidebar
-    description = 'My patch of cyberspace' # Used as default meta description if not specified in front matter
+    description = 'My personal patch of cyberspace.' # Used as default meta description if not specified in front matter
     dark_mode = true                      # optional - defaults to false
     # favicon = "favicon.png"             # path to favicon (defaults to favicon.png)
 
