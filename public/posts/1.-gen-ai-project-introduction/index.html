@@ -56,11 +56,11 @@
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">The Data Pool - Building my website</title>
-<meta property="og:title" content=The&#32;Data&#32;Pool&#32;-&#32;Building&#32;my&#32;website />
-<meta name="twitter:title" content=The&#32;Data&#32;Pool&#32;-&#32;Building&#32;my&#32;website />
-<meta itemprop="name" content=The&#32;Data&#32;Pool&#32;-&#32;Building&#32;my&#32;website />
-<meta name="application-name" content=The&#32;Data&#32;Pool&#32;-&#32;Building&#32;my&#32;website />
+<title itemprop="name">The Data Pool - Yet another GenAI project</title>
+<meta property="og:title" content=The&#32;Data&#32;Pool&#32;-&#32;Yet&#32;another&#32;GenAI&#32;project />
+<meta name="twitter:title" content=The&#32;Data&#32;Pool&#32;-&#32;Yet&#32;another&#32;GenAI&#32;project />
+<meta itemprop="name" content=The&#32;Data&#32;Pool&#32;-&#32;Yet&#32;another&#32;GenAI&#32;project />
+<meta name="application-name" content=The&#32;Data&#32;Pool&#32;-&#32;Yet&#32;another&#32;GenAI&#32;project />
 <meta property="og:site_name" content="" />
 
 
@@ -70,11 +70,11 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="http://localhost:1313/posts/building-my-website/" />
-<link rel="canonical" href="http://localhost:1313/posts/building-my-website/" itemprop="url" />
-<meta name="url" content="http://localhost:1313/posts/building-my-website/" />
-<meta name="twitter:url" content="http://localhost:1313/posts/building-my-website/" />
-<meta property="og:url" content="http://localhost:1313/posts/building-my-website/" />
+<base href="http://localhost:1313/posts/1.-gen-ai-project-introduction/" />
+<link rel="canonical" href="http://localhost:1313/posts/1.-gen-ai-project-introduction/" itemprop="url" />
+<meta name="url" content="http://localhost:1313/posts/1.-gen-ai-project-introduction/" />
+<meta name="twitter:url" content="http://localhost:1313/posts/1.-gen-ai-project-introduction/" />
+<meta property="og:url" content="http://localhost:1313/posts/1.-gen-ai-project-introduction/" />
 
 
 <meta property="og:updated_time" content="2025-03-06T00:00:00Z" />
@@ -337,7 +337,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
                 <div class="post">
   <div class="info">
   <h1 class="post-title">
-    <a href="http://localhost:1313/posts/building-my-website/">Building my website</a>
+    <a href="http://localhost:1313/posts/1.-gen-ai-project-introduction/">Yet another GenAI project</a>
   </h1>
 
   <div class="headline">
@@ -354,7 +354,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
           
         
 
-        <span>3 mins read</span>
+        <span>2 mins read</span>
       </span>
     </div>
 
@@ -365,8 +365,8 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
         <a href="http://localhost:1313/tags/projects">projects</a>
       </li>
       
-      <li class="tag-webdev">
-        <a href="http://localhost:1313/tags/webdev">webdev</a>
+      <li class="tag-ai">
+        <a href="http://localhost:1313/tags/ai">ai</a>
       </li>
       
     </ul>
@@ -375,44 +375,54 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 
   
   
+  <p class="seriesname">
+    Series: <a href="http://localhost:1313/series/genai">GenAI</a>
+  </p>
+  
 
   
 </div>
 
-  <h3 id="why-did-i-decide-to-build-a-personal-website">Why did I decide to build a personal website?</h3>
-<p>Overall, the goal is to share more of about what I have going on than can be found on my <a href="https://www.linkedin.com/in/clmangham/" target="_blank">LinkedIn</a> because it&rsquo;s <em>really</em> just a resume and I <em>really</em> don&rsquo;t use the social media aspects of it or any other social media platforms.</p>
-<p>Creating a personal website has been a goal of mine for a while now, and while this is not the first version of an online platform for my content, I think this is a better one. Previously, I used <a href="https://streamlit.io/" target="_blank">streamlit</a> to build and deploy a personal webpage along with an LLM application. As a python programmer, I found it quite simple and intuitive (in fact I may still continue to use it for other projects). After deploying on the free &ldquo;Community Cloud&rdquo; I discovered that after a while with no traffic the whole application shut&rsquo;s down (which is fair).</p>
-<p>!<img src="/images/Pasted%20image%2020250306045600.png" alt="Image Description"></p>
-<p>I wanted a better hosting option with more interesting customization options, more control, and the ultimate goal of hosting the site and related services (such as LLM applications) from my secure local network. In addition, I wanted a blog style website instead of a portfolio / personal brand style website. I primarily take notes and do my writing in markdown, so turning those notes into webpages was high on my list.</p>
-<h2 id="deploying-with-hugo-and-github-pages">Deploying with Hugo and GitHub Pages</h2>
-<p>I reviewed a few development frameworks starting with the familiar python <a href="https://flask.palletsprojects.com/en/stable/" target="_blank">Flask</a>, and checked out <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> (based on Ruby), but realized I need to learn way more about frontend. For now I settled on <a href="https://gohugo.io/" target="_blank">Hugo</a> (based on Go), which seems to be extremely lightweight, easy to customize with themes, and <em>natively uses markdown to generate html content</em>.</p>
-<h3 id="to-set-up-the-site">To set up the site</h3>
-<ol>
-<li>Follow the <a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick start</a> guide installing Hugo and its prerequisite Go. I already had Git and did not need Dart Sass.</li>
-<li>Download a custom <a href="https://themes.gohugo.io/" target="_blank">theme</a>.</li>
-</ol>
-<p>The quick start guide is well done - after walking through the process you can easily replicate it with your theme of choice, configure the site, and add content.</p>
-<h3 id="to-host-and-deploy">To host and deploy</h3>
-<p>For deployment options for now I&rsquo;m using <a href="https://pages.github.com/" target="_blank">Github Pages</a> for automatic deployment and CI/CD. This is relatively simple, free, and allows me to stand the site up now as I flesh out content and prepare for local deployment. To do this I just followed the Hugo documentation on <a href="https://gohugo.io/host-and-deploy/" target="_blank">hosting and deployment</a>.</p>
-<p><em>One thing that does not seem to be mentioned in the Hugo docs is that the github repository name should be <a href="mailto:username@gituhub.io">username@gituhub.io</a>, this is explained in the Github Pages docs.</em></p>
-<p>As I mentioned above, this deployment is temporary as I plan to host a different way in the future.</p>
-<h3 id="why-move-to-a-secure-local-server">Why Move to a Secure Local Server?</h3>
-<p>Mainly because It&rsquo;s a fun homelab project. Of course there <em>are</em> limitations to GitHub Pages as it&rsquo;s mainly used for small static sites. From my understanding there is no backend processing and limited control over infrastructure. Ultimately I&rsquo;ll want to have additional services running such as local LLM-powered tools and may even move to dynamic content in the future. Additionally, I am also focused on security and privacy considerations. More on that to come.</p>
-<h3 id="future-updates">Future updates</h3>
+  <h2 id="what-inspired-this-new-project">What inspired this new project?</h2>
+<p>A while back (about a year ago) I made a couple of genAI projects while I was on the job search. Both were developed with <a href="https://github.com/langchain-ai/langchain" target="_blank">Langchain</a> and Streamlit and can be viewed here:</p>
 <ul>
-<li>Setting up <em>and securing</em> a local server (looking at you <a href="https://nginx.org/" target="_blank">nginx</a>, <a href="https://www.docker.com/" target="_blank">Docker</a>)</li>
-<li>Hosting and serving my website locally (and implementing HTTPS with <a href="https://letsencrypt.org/" target="_blank">Let&rsquo;s Encrypt</a>)</li>
-<li>Adding advanced features and integrations (LLM tools, analytics, content engagement et cetera)</li>
+<li><a href="https://github.com/clmangham/cover_letter_generator" target="_blank">Cover Letter Generator</a> on that I shared as a <a href="https://clmangham.streamlit.app/Cover_Letter_Generator" target="_blank">Streamlit app</a></li>
+<li><a href="https://github.com/clmangham/SME_LLM" target="_blank">AI chatbot</a> for trending research papers from paperswithcode.com.</li>
 </ul>
+<p>!<img src="/images/Pasted%20image%2020250306135143.png" alt="Image Description">
+<em>Simple front-end for cover letter generator, built with Streamlit</em>.</p>
+<p>While looking for new job roles (again) I&rsquo;ve been considering AI tools that can help in my day to day.</p>
+<h2 id="so-whats-the-big-idea">So what&rsquo;s the big idea?</h2>
+<p>The problem is that while applying for a varied job titles, with diverse job descriptions (<em>Data Scientist, Data engineer, ML engineer, GenAI engineer, et cetera</em>), across different industries it can be difficult to think of the best ways to be successful my job search.</p>
+<p>The (<em>not so big</em>) idea is to capture relevant data from my job search and use Retrieval Augmented Generation (RAG - commonly discussed as GenAI) and cleverly crafted prompts to aid with digesting this information.</p>
+<p><strong>The initial goal develop this process that captures data and pipes it to my new AI assistant.</strong></p>
+<p>In the future I&rsquo;d plan to deploy this and any other AI service with my home lab, so I have access to from anywhere.</p>
+<h2 id="frameworks-and-models">Frameworks, and models</h2>
+<p>I&rsquo;m familiar with Langchain, so I&rsquo;ll be sticking with that. As for models, I have primarily used OpenAI&rsquo;s GPT models, but I am considering what other models I could use locally, for example, <a href="https://ollama.com/" target="_blank">Ollama</a>.</p>
+<p>I&rsquo;ll do some research on local models, but I&rsquo;m generally excited to see what kind of output comes from this.</p>
 
   
   <hr>
 <div class="footer">
     
-	    
-            <a class="previous-post" href="http://localhost:1313/posts/welcome/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Welcome</a>
-        
-	    
+    
+    
+    <p>
+    This is a post in the <b><a href="http://localhost:1313/series/genai">GenAI</a></b> series.
+        <br>Other posts in this series:
+        <ul class="series">
+            
+            
+            
+            <li>
+                March 6, 2025 -
+                
+                    Yet another GenAI project
+                
+            </li>
+            
+        </ul>
+    </p>
     
 </div>
 
@@ -426,19 +436,9 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
       <h4 id="contents"></h4>
       <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#why-did-i-decide-to-build-a-personal-website">Why did I decide to build a personal website?</a></li>
-      </ul>
-    </li>
-    <li><a href="#deploying-with-hugo-and-github-pages">Deploying with Hugo and GitHub Pages</a>
-      <ul>
-        <li><a href="#to-set-up-the-site">To set up the site</a></li>
-        <li><a href="#to-host-and-deploy">To host and deploy</a></li>
-        <li><a href="#why-move-to-a-secure-local-server">Why Move to a Secure Local Server?</a></li>
-        <li><a href="#future-updates">Future updates</a></li>
-      </ul>
-    </li>
+    <li><a href="#what-inspired-this-new-project">What inspired this new project?</a></li>
+    <li><a href="#so-whats-the-big-idea">So what&rsquo;s the big idea?</a></li>
+    <li><a href="#frameworks-and-models">Frameworks, and models</a></li>
   </ul>
 </nav>
     </div>

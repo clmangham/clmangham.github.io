@@ -49,18 +49,14 @@
 
 
 
-  
-  
-  
-
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">The Data Pool - Building my website</title>
-<meta property="og:title" content=The&#32;Data&#32;Pool&#32;-&#32;Building&#32;my&#32;website />
-<meta name="twitter:title" content=The&#32;Data&#32;Pool&#32;-&#32;Building&#32;my&#32;website />
-<meta itemprop="name" content=The&#32;Data&#32;Pool&#32;-&#32;Building&#32;my&#32;website />
-<meta name="application-name" content=The&#32;Data&#32;Pool&#32;-&#32;Building&#32;my&#32;website />
+<title itemprop="name"></title>
+<meta property="og:title" content=ZgotmplZ />
+<meta name="twitter:title" content=ZgotmplZ />
+<meta itemprop="name" content=ZgotmplZ />
+<meta name="application-name" content=ZgotmplZ />
 <meta property="og:site_name" content="" />
 
 
@@ -70,17 +66,18 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="http://localhost:1313/posts/building-my-website/" />
-<link rel="canonical" href="http://localhost:1313/posts/building-my-website/" itemprop="url" />
-<meta name="url" content="http://localhost:1313/posts/building-my-website/" />
-<meta name="twitter:url" content="http://localhost:1313/posts/building-my-website/" />
-<meta property="og:url" content="http://localhost:1313/posts/building-my-website/" />
+<base href="http://localhost:1313/tags/ai/" />
+<link rel="canonical" href="http://localhost:1313/tags/ai/" itemprop="url" />
+<meta name="url" content="http://localhost:1313/tags/ai/" />
+<meta name="twitter:url" content="http://localhost:1313/tags/ai/" />
+<meta property="og:url" content="http://localhost:1313/tags/ai/" />
 
 
 <meta property="og:updated_time" content="2025-03-06T00:00:00Z" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='http://localhost:1313/sitemap.xml' />
+<link href="http://localhost:1313/tags/ai/index.xml" rel="alternate" type="application/rss+xml" title="" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -334,118 +331,25 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <div class="post">
-  <div class="info">
-  <h1 class="post-title">
-    <a href="http://localhost:1313/posts/building-my-website/">Building my website</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-      
-      <time datetime=" 2025-03-06T00:00:00Z" class="post-date">
-        March 6, 2025
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>3 mins read</span>
-      </span>
-    </div>
-
+                <h1 class="title">Ai</h1>
+<ul class="entries">
     
-    <ul class="tags">
-      
-      <li class="tag-projects">
-        <a href="http://localhost:1313/tags/projects">projects</a>
-      </li>
-      
-      <li class="tag-webdev">
-        <a href="http://localhost:1313/tags/webdev">webdev</a>
-      </li>
-      
-    </ul>
+        <h3 style="text-align: center;">2025</h3>
+        
+            <li>
+                <span class="title">
+                    <a href="/posts/1.-gen-ai-project-introduction/">Yet another GenAI project</a>
+                </span>
+                <span class="published">
+                    <time class="pull-right post-list">March 6, 2025</time>
+                </span>
+            </li>
+        
     
-  </div>
-
-  
-  
-
-  
-</div>
-
-  <h3 id="why-did-i-decide-to-build-a-personal-website">Why did I decide to build a personal website?</h3>
-<p>Overall, the goal is to share more of about what I have going on than can be found on my <a href="https://www.linkedin.com/in/clmangham/" target="_blank">LinkedIn</a> because it&rsquo;s <em>really</em> just a resume and I <em>really</em> don&rsquo;t use the social media aspects of it or any other social media platforms.</p>
-<p>Creating a personal website has been a goal of mine for a while now, and while this is not the first version of an online platform for my content, I think this is a better one. Previously, I used <a href="https://streamlit.io/" target="_blank">streamlit</a> to build and deploy a personal webpage along with an LLM application. As a python programmer, I found it quite simple and intuitive (in fact I may still continue to use it for other projects). After deploying on the free &ldquo;Community Cloud&rdquo; I discovered that after a while with no traffic the whole application shut&rsquo;s down (which is fair).</p>
-<p>!<img src="/images/Pasted%20image%2020250306045600.png" alt="Image Description"></p>
-<p>I wanted a better hosting option with more interesting customization options, more control, and the ultimate goal of hosting the site and related services (such as LLM applications) from my secure local network. In addition, I wanted a blog style website instead of a portfolio / personal brand style website. I primarily take notes and do my writing in markdown, so turning those notes into webpages was high on my list.</p>
-<h2 id="deploying-with-hugo-and-github-pages">Deploying with Hugo and GitHub Pages</h2>
-<p>I reviewed a few development frameworks starting with the familiar python <a href="https://flask.palletsprojects.com/en/stable/" target="_blank">Flask</a>, and checked out <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> (based on Ruby), but realized I need to learn way more about frontend. For now I settled on <a href="https://gohugo.io/" target="_blank">Hugo</a> (based on Go), which seems to be extremely lightweight, easy to customize with themes, and <em>natively uses markdown to generate html content</em>.</p>
-<h3 id="to-set-up-the-site">To set up the site</h3>
-<ol>
-<li>Follow the <a href="https://gohugo.io/getting-started/quick-start/" target="_blank">Quick start</a> guide installing Hugo and its prerequisite Go. I already had Git and did not need Dart Sass.</li>
-<li>Download a custom <a href="https://themes.gohugo.io/" target="_blank">theme</a>.</li>
-</ol>
-<p>The quick start guide is well done - after walking through the process you can easily replicate it with your theme of choice, configure the site, and add content.</p>
-<h3 id="to-host-and-deploy">To host and deploy</h3>
-<p>For deployment options for now I&rsquo;m using <a href="https://pages.github.com/" target="_blank">Github Pages</a> for automatic deployment and CI/CD. This is relatively simple, free, and allows me to stand the site up now as I flesh out content and prepare for local deployment. To do this I just followed the Hugo documentation on <a href="https://gohugo.io/host-and-deploy/" target="_blank">hosting and deployment</a>.</p>
-<p><em>One thing that does not seem to be mentioned in the Hugo docs is that the github repository name should be <a href="mailto:username@gituhub.io">username@gituhub.io</a>, this is explained in the Github Pages docs.</em></p>
-<p>As I mentioned above, this deployment is temporary as I plan to host a different way in the future.</p>
-<h3 id="why-move-to-a-secure-local-server">Why Move to a Secure Local Server?</h3>
-<p>Mainly because It&rsquo;s a fun homelab project. Of course there <em>are</em> limitations to GitHub Pages as it&rsquo;s mainly used for small static sites. From my understanding there is no backend processing and limited control over infrastructure. Ultimately I&rsquo;ll want to have additional services running such as local LLM-powered tools and may even move to dynamic content in the future. Additionally, I am also focused on security and privacy considerations. More on that to come.</p>
-<h3 id="future-updates">Future updates</h3>
-<ul>
-<li>Setting up <em>and securing</em> a local server (looking at you <a href="https://nginx.org/" target="_blank">nginx</a>, <a href="https://www.docker.com/" target="_blank">Docker</a>)</li>
-<li>Hosting and serving my website locally (and implementing HTTPS with <a href="https://letsencrypt.org/" target="_blank">Let&rsquo;s Encrypt</a>)</li>
-<li>Adding advanced features and integrations (LLM tools, analytics, content engagement et cetera)</li>
 </ul>
 
-  
-  <hr>
-<div class="footer">
-    
-	    
-            <a class="previous-post" href="http://localhost:1313/posts/welcome/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Welcome</a>
-        
-	    
-    
-</div>
-
-  
-</div>
             </main>
             
-  
-    <div class="article-toc ">
-    <div class="toc-wrapper">
-      <h4 id="contents"></h4>
-      <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#why-did-i-decide-to-build-a-personal-website">Why did I decide to build a personal website?</a></li>
-      </ul>
-    </li>
-    <li><a href="#deploying-with-hugo-and-github-pages">Deploying with Hugo and GitHub Pages</a>
-      <ul>
-        <li><a href="#to-set-up-the-site">To set up the site</a></li>
-        <li><a href="#to-host-and-deploy">To host and deploy</a></li>
-        <li><a href="#why-move-to-a-secure-local-server">Why Move to a Secure Local Server?</a></li>
-        <li><a href="#future-updates">Future updates</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </div>
-</div>
-
-  
-
         </div>
     </body>
 </html>
